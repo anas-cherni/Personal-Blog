@@ -4,8 +4,8 @@ const Data = () => {
   return (
       <div className="home__data">
           <h1 className="home__title">$Anas Cherni_</h1>
-          <h3 className="home_subtitle">Network Engineering student <a href="https://fr.wikipedia.org/wiki/Institut_national_des_sciences_appliqu%C3%A9es_et_de_technologie" target="_blank"> @INSAT</a></h3>
-          <h3 className="home_subtitle">Cybersecurity & Cloud enthusiast | Web developer | Linux administrator</h3>
+          <h3>Network Engineering student <a href="https://fr.wikipedia.org/wiki/Institut_national_des_sciences_appliqu%C3%A9es_et_de_technologie" target="_blank"> @INSAT</a></h3>
+          <h3>Cybersecurity & Cloud enthusiast | Web developer | Linux administrator</h3>
           <p className="home__description">Based in Tunisia, CTF player with <a href="https://ctftime.org/team/194091" target="_blank">SOter14 team</a>, focused on Wep app penetration testing. <br/> I enjoy auditing source codes and scripting my exploits 🤖</p>
           <a href="#contact" className="button button--flex">
               Ping me!
