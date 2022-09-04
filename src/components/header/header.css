@@ -29,7 +29,7 @@
     flex-direction: column;
     align-items: center; 
     font-size: var(--small-font-size);
-    color: var(--title-color);
+    color: var(--title-color-dark);
     font-weight: var(--font-medium);
     transition: .3s;
      
@@ -43,8 +43,9 @@
 
 .active-link,
 .nav__link:hover {
-    color: var(--title-color-dark);
+    color: var(--title-color);
     font-weight: var(--font-semi-bold);
+    text-shadow: 0 0 4px #00FF00;
 
 }
 

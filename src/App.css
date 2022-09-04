@@ -1,6 +1,8 @@
 /*google font*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
 /*css vars*/
 
 :root{
@@ -8,14 +10,14 @@
   /*Color mode (hue,saturation,lightness)*/
   --hue: 0;
   --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff;
+  --title-color: #00ff00;
+  --title-color-dark: #34b934;
+  --text-color: #2aca2a;
+  --body-color: #000;
+  --container-color: rgb(39, 38, 38);
 
   /*font and typos*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: 'Roboto Mono', monospace;
 
   --big-font-size:3rem;
   --h1-font-size:2.25rem;
@@ -82,6 +84,9 @@ h1,h2,h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
+h1,h2 {
+  text-shadow: 0 0 4px #00ff00;
+}
 
 ul{
   list-style: none;
@@ -133,12 +138,13 @@ img{
   display: inline-block;
   background-color: var(--title-color);
   color: var(--container-color);
-  padding: 1.25rem 2rem;
+  padding: 1rem 1.4rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
 }
 .button:hover{
-  background-color: var(--title-color-dark);
+  background-color: rgb(97, 226, 85);
+ 
 }
  .button__icon{
    margin-left: var(--mb-0-5);

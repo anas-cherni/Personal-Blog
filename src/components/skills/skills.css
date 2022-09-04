@@ -1,0 +1,93 @@
+.skills__container{
+    grid-template-columns: repeat(2,350px);
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.skills__content{
+    background-color: var(--container-color);
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+}
+.underscore{
+    margin-bottom: var(--mb-3);
+    text-align: center;
+
+
+}
+.underscore1{
+    margin-bottom: var(--mb);
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+
+
+
+}
+
+.skills__title{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills__box{
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+.skills__group{
+    display: grid;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+
+.skills__data{
+    display: flex;
+    column-gap: 0.5rem;
+    margin-bottom: var(--mb-1-5);
+}
+
+.skills, .bx-badge-check, .uil-window,.uil-search-alt,.uil-server-network, 
+.uil-setting, .uil-lock-access,.uil-processor,.uil-desktop{
+    font-size: 1rem;
+    color: var(--title-color) ;
+}
+.skills__name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+    margin-bottom: var(--mb-0-5);
+}
+.skills__level{
+    font-size: var(--tiny-font-size);
+    font-weight: var(--font-normal);
+}
+
+.gif{
+    padding-top: 2rem;
+    border-radius: 50%;
+    filter:grayscale(80%);
+
+}
+
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: 
+    typing 2.25s steps(40),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+}
+

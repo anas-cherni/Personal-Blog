@@ -1,6 +1,6 @@
 .home__content{
     grid-template-columns: 116px repeat(2,1fr);
-    padding-top: 5.5rem;
+    padding-top: 2.5rem;
     column-gap: 2rem;
     align-items: center;
 }
@@ -33,7 +33,7 @@
     margin-left: 2px;
 }
 
-.home_scroll-arrow{
+.home__scroll-arrow{
     font-size: 1.25rem;
     color: var(--title-color);
 }
@@ -43,12 +43,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+    box-shadow: inset 0px 0px 0px 5px #00FF00;
     order: 1;
     justify-self: center;
     width: 300px;
     height: 300px;
-    animation: profile__animate 8s ease-in-out infinite 1s;
+    animation:profile__animate 8s ease-in-out infinite 0s;
 }
 @keyframes profile__animate{
     0%{
@@ -87,26 +87,19 @@
 }
 
 .home__subtitle{
-    position: relative;
-    font-size: var(--h3-font-size);
-    padding-left: 5.4rem;
-    font-weight: var(--font-normal);
-    margin-bottom: var(--mb-1);
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:var(--title-color);
+    max-width: 400px;
+   /* text-shadow: 0 0 4px var(--title-color);*/
 }
 
-.home__subtitle::before{
-    content: '';
-    position: absolute;
-    width: 70px;
-    height: 1px;
-    background-color: var(--test-color);
-    left: 0;
-    top: 1rem;
-}
 
 .home__description{
     max-width: 400px;
     margin-bottom: var(--mb-3);
+    
 }
 
 @media screen and (max-width: 992px){
@@ -116,8 +109,7 @@
 
     }
     .home__subtitle{
-        padding-left: 3.75rem;
-        margin-bottom:var(--mb-1)
+        margin-bottom:0.3rem;
     }
     .home__subtitle::before{
         width: 42px;
@@ -140,14 +132,28 @@
 
 }
 
+a{
+    font-style: italic;
+    color:#00FF00;
+    text-shadow: 0 0 2px #00FF00;
+}
+@media screen and (max-width: 482px){
+    .home__subtitle{
+        font-size: 0.9rem;
+    }
+    .home__description{
+        font-size: 0.85rem;
+    }
+}
 @media screen and (max-width: 768px){
     .home__content{
+        justify-self:center;
         grid-template-columns: 0.5fr 3fr;
-        padding-top: 3.5rem;
+        padding-top: 3.5rem;        
     }
     .home__img{
         order: initial;
-        justify-self:initial;
+        justify-self:center;
         box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
         width: 200px;
         height: 200px;
@@ -160,9 +166,101 @@
     }  
 }
 
-@media screen and (max-width: 350px){
+
+@media screen and (max-width: 452px){
     .home__img{
         width: 180px;
         height: 180px;
     }
+    .home__description{
+        font-size: 0.8rem;
+    }
+    .home__subtitle{
+        font-size: 0.85rem;
+    }
+
+}
+
+.line-1{
+    border-right:10px solid rgba(255,255,255,.75);
+    white-space:nowrap ;
+    overflow: hidden;
+}
+.btn{
+    display:flex;
+    justify-self: left;
+    padding-top: 2rem;
+    padding-left: 4rem;
+}
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 1.6s steps(11) 0.5s 1 normal both,
+             blinkTextCursor 500ms 0s steps(44) 20,
+             blinkTextCursor1 500ms 1.9s steps(44) infinite;
+}
+p:nth-child(1){
+    border-right:5px solid rgba(255,255,255,.75);
+    white-space:nowrap ;
+    overflow: hidden;
+    animation: typewriter 1.25s steps(11) 3.6s 1 normal both,
+    blinkTextCursor1 500ms 0s steps(44) infinite,
+    blinkTextCursor 500ms 2.3s steps(44) 20,
+    blinkTextCursor1 500ms 5s steps(44) infinite;
+}
+p:nth-child(2){
+    border-right:5px solid rgba(255,255,255,.75);
+    white-space:nowrap ;
+    overflow: hidden;
+    animation: typewriter 1.25s steps(11) 5.5s 1 normal both,
+    blinkTextCursor1 500ms 0s steps(44) infinite,
+    blinkTextCursor 500ms 5s steps(44) 20,
+    blinkTextCursor1 500ms 7s steps(44) infinite;
+}
+p:nth-child(3){
+    border-right:5px solid rgba(255,255,255,.75);
+    white-space:nowrap ;
+    overflow: hidden;
+    animation: typewriter 1.25s steps(11) 7.5s 1 normal both,
+    blinkTextCursor1 500ms 0s steps(44) infinite,
+    blinkTextCursor 500ms 7s steps(44) 30,
+    blinkTextCursor1 500ms 11s steps(44) infinite;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+@keyframes blinkTextCursor1{
+  from{border-right-color: transparent;}
+  to{border-right-color: transparent;}
+}
+
+.trans{
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+.fadein{
+    opacity: 0;
+    filter: blur(4px);
+    animation: fade-in 0.8s 11s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.fadein2{
+    opacity: 0;
+    animation: fade-in 0.8s 20s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
 }

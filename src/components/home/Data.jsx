@@ -1,12 +1,19 @@
 import React from 'react'
+import ScrollDown from './ScrollDown'
 
 const Data = () => {
   return (
       <div className="home__data">
-          <h1 className="home__title">$Anas Cherni_</h1>
-          <h3>Network Engineering student <a href="https://fr.wikipedia.org/wiki/Institut_national_des_sciences_appliqu%C3%A9es_et_de_technologie" target="_blank"> @INSAT</a></h3>
-          <h3>Cybersecurity & Cloud enthusiast | Web developer | Linux administrator</h3>
-          <p className="home__description">Based in Tunisia, CTF player with <a href="https://ctftime.org/team/194091" target="_blank">SOter14 team</a>, focused on Wep app penetration testing. <br/> I enjoy auditing source codes and scripting my exploits 🤖</p>
+          <h1 className="home__title line-1 anim-typewriter">Anas Cherni</h1>
+          <div className="trans">
+          <p className="home__subtitle">Network Engineering student <a href="https://fr.wikipedia.org/wiki/Institut_national_des_sciences_appliqu%C3%A9es_et_de_technologie" target="_blank" rel="noreferrer"> @INSAT</a></p>
+          <p className="home__subtitle">Cybersecurity & Cloud enthusiast </p>
+          <p className="home__subtitle">Web developer,  Linux administrator</p>
+          <div className="fadein">
+          <br/>
+          <p className="home__description">
+            Based in Tunisia, CTF player with
+            <a href="https://ctftime.org/team/194091" target="_blank" rel="noreferrer"> SOter14 <br/>team</a>, focused on Wep app penetration <br/>testing. I enjoy auditing source codes <br/>and scripting my exploits 🤖 <br/> Graduate in 2025. </p>
           <a href="#contact" className="button button--flex">
               Ping me!
               <svg
@@ -27,6 +34,12 @@ const Data = () => {
                   ></path>
                 </svg>
           </a>
+          <div className="btn fadein2">
+
+          <ScrollDown/>
+          </div>
+          </div>
+          </div>
           </div>
   )
 }
