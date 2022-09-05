@@ -43,7 +43,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0px 0px 0px 5px #00FF00;
+    box-shadow: inset 0px 0px 0px 5px var(--text-color);
     order: 1;
     justify-self: center;
     width: 300px;
@@ -134,15 +134,15 @@
 
 a{
     font-style: italic;
-    color:#00FF00;
-    text-shadow: 0 0 2px #00FF00;
+    color: var(--text-color);
+    text-shadow: 0 0 2px var(--text-color);
 }
 @media screen and (max-width: 482px){
     .home__subtitle{
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
     .home__description{
-        font-size: 0.85rem;
+        font-size: 0.78rem;
     }
 }
 @media screen and (max-width: 768px){
@@ -167,16 +167,16 @@ a{
 }
 
 
-@media screen and (max-width: 452px){
+@media screen and (max-width: 350px){
     .home__img{
         width: 180px;
         height: 180px;
     }
     .home__description{
-        font-size: 0.8rem;
+        font-size: 0.68rem;
     }
     .home__subtitle{
-        font-size: 0.85rem;
+        font-size: 0.7rem;
     }
 
 }

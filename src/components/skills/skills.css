@@ -13,6 +13,7 @@
 .underscore{
     margin-bottom: var(--mb-3);
     text-align: center;
+    color: var(--text-color);
 
 
 }
@@ -20,6 +21,7 @@
     margin-bottom: var(--mb);
     text-align: center;
     margin-bottom: var(--mb-1-5);
+    color: var(--text-color);
 
 
 
@@ -30,6 +32,7 @@
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: var(--mb-0-5);
+    color: var(--text-color);
 }
 
 .skills__box{
@@ -52,7 +55,7 @@
 .skills, .bx-badge-check, .uil-window,.uil-search-alt,.uil-server-network, 
 .uil-setting, .uil-lock-access,.uil-processor,.uil-desktop{
     font-size: 1rem;
-    color: var(--title-color) ;
+    color: var(--text-color) ;
 }
 .skills__name{
     font-size: var(--normal-font-size);
@@ -76,7 +79,7 @@
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   animation: 
-    typing 2.25s steps(40),
+    typing 1.7s steps(15),
     blink-caret .5s step-end infinite;
 }
 
@@ -91,3 +94,30 @@
   from, to { border-color: transparent }
 }
 
+@media screen and (max-width: 992px) {
+    .skills__container{
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .skills__container{
+        grid-template-columns: 1fr;
+    }
+    .skills__content{
+        padding:1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .skills__box{
+        column-gap: 1.25rem;
+    }
+    .skills__name{
+        font-size: var(--small-font-size);
+    }
+    
+}
