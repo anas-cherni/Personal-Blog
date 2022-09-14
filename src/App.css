@@ -125,7 +125,23 @@ video{
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: 4rem;
+
 }
+.mbt{
+  margin-top: 7rem;
+}
+.section__subtitle2{
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 0.1rem;
+  text-align: center;
+}
+.section__subtitle3{
+  display: block;
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+
 .section__title,.section__subtitle{
   text-align: center;
 }

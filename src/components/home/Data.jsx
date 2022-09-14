@@ -14,7 +14,7 @@ const Data = () => {
           <p className="home__description">
             Based in Tunisia, CTF player with
             <a href="https://ctftime.org/team/194091" target="_blank" rel="noreferrer"> SOter14 <br/>team</a>, focused on Wep app penetration <br/>testing. I enjoy auditing source codes <br/>and scripting my exploits 🤖 <br/> Graduate in 2025. </p>
-          <a href="#contact" className="button button--flex">
+          <a href="https://www.linkedin.com/in/anascherni/" className="button button--flex">
               Ping me!
               <svg
                   class="button__icon"

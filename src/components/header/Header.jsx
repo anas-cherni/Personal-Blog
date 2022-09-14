@@ -8,7 +8,7 @@ const Header = () => {
     <div>
       <header className="header">
           <nav className="nav  container">
-             <a href="index.html" className="nav__logo">./n0s</a>
+             <a href="#About" className="nav__logo">./n0s</a>
 
              <div className={Toggle? "nav__menu show-menu" : "nav__menu"}>
                  <ul className="nav__list grid">
@@ -33,12 +33,7 @@ const Header = () => {
                          </a>
                      </li>
 
-                      <li className="nav__item">
-                         <a href="#Contact" onClick={()=> setActiveNav("#Contact")}
-                         className={activeNav === "#Contact" ? "nav_link active-link" : "nav_link"}>
-                             <i className="uil uil-message nav__icon"></i>Contact
-                         </a>
-                     </li>
+                      
                      
                  </ul>
                  <i className="uil uil-times nav__close" onClick={()=> showMenu(!Toggle)}></i>

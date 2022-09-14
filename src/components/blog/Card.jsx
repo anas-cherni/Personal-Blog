@@ -4,7 +4,7 @@ import img from "../../assets/profile.jpg"
 const Card = () => {
   return (
     <div className="container">
-        <a href="">
+        <a href="https://blog.anas-cherni.me/2022/09/14/csaw2k22/">
     <div class="container mt-5">
   <div class="row">
     <div class="col-12">
@@ -23,8 +23,8 @@ const Card = () => {
           </span>
         </div>
         <div class="blog-card__info">
-          <h5>SEPT-12th-2022</h5>
-          <p>CSAW 2022 Quals - FULL WEB writeups</p>
+          <h5>SEPT-14th-2022</h5>
+          <p>CSAW 2022 Quals - All WEB writeups</p>
         </div>
       </article>
     </div>

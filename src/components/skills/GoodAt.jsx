@@ -4,7 +4,7 @@ const GoodAt = () => {
   return (
     <div className="skills__content">
         <h3 className="underscore1">___________________</h3>
-        <h3 className="skills__title typewriter">I'am GOOD at</h3>
+        <h3 className="skills__title typewriter">I'am Enjoying</h3>
         <h3 className="underscore">___________________</h3>
 
         <div className="skills__box">
