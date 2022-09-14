@@ -3,6 +3,7 @@ import "./header.css"
 import { useState } from 'react';
 const Header = () => {
     const [Toggle, showMenu] = useState(false);
+    const [activeNav, setActiveNav] = useState("#About");
   return (
     <div>
       <header className="header">
@@ -12,25 +13,29 @@ const Header = () => {
              <div className={Toggle? "nav__menu show-menu" : "nav__menu"}>
                  <ul className="nav__list grid">
                      <li className="nav__item">
-                         <a href="#About" className="nav__link active-link">
+                         <a href="#About" onClick={()=> setActiveNav("#About")}
+                         className={activeNav === "#About" ? "nav_link active-link" : "nav_link"}>
                              <i className="uil uil-estate nav__icon"></i>About
                          </a>
                      </li>
 
                       <li className="nav__item">
-                         <a href="#Skills" className="nav__link">
+                         <a href="#Skills" onClick={()=> setActiveNav("#Skills")}
+                         className={activeNav === "#Skills" ? "nav_link active-link" : "nav_link"}>
                              <i className="uil uil-file nav__icon"></i>Skills
                          </a>
                      </li>
 
                       <li className="nav__item">
-                         <a href="#Blog" className="nav__link">
+                         <a href="#Blog" onClick={()=> setActiveNav("#Blog")}
+                         className={activeNav === "#Blog" ? "nav_link active-link" : "nav_link"}>
                              <i className="uil uil-briefcase-alt nav__icon"></i>Blog
                          </a>
                      </li>
 
                       <li className="nav__item">
-                         <a href="#Contact" className="nav__link">
+                         <a href="#Contact" onClick={()=> setActiveNav("#Contact")}
+                         className={activeNav === "#Contact" ? "nav_link active-link" : "nav_link"}>
                              <i className="uil uil-message nav__icon"></i>Contact
                          </a>
                      </li>
