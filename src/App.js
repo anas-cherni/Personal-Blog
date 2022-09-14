@@ -9,6 +9,7 @@ import vid from './assets/video.mp4'
 const App = () => {
   return (
     <div>
+      {/*
       <video src={vid} autoPlay loop muted />
       <Header />
       <main className="main">
@@ -19,8 +20,11 @@ const App = () => {
         <Qualification />
         <video src={vid} autoPlay loop muted />
         <Blog />
+        </main>
+      */}
+      <p>under construction</p>
 
-      </main>
+
     </div>
   )
 }
