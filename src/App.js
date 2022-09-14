@@ -4,6 +4,7 @@ import Header from './components/header/Header'
 import Home from './components/home/Home'
 import Skills from './components/skills/Skills'
 import Qualification from './components/qualification/Qualification'
+import Blog from './components/blog/Blog'
 const App = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const App = () => {
         <Home />
         <Skills />
         <Qualification />
+        <Blog />
 
       </main>
     </div>
