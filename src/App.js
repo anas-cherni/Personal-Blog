@@ -22,7 +22,7 @@ const App = () => {
         <Blog />
         </main>
       */}
-      <p>under construction</p>
+      <h2>under construction</h2>
 
 
     </div>
