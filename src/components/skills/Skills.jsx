@@ -5,6 +5,7 @@ import Exploring from './Exploring'
 
 const Skills = () => {
   return (
+    <div>
     <section className="skills section" id="Skills">
         <h2 className="section__title">Skills</h2>
         <span className="section__subtitle">My technical Skills</span>
@@ -14,6 +15,8 @@ const Skills = () => {
             <Exploring/>
         </div>
     </section>
+  
+    </div>
   )
 }
 
