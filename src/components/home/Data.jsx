@@ -6,14 +6,16 @@ const Data = () => {
       <div className="home__data">
           <h1 className="home__title line-1 anim-typewriter">Anas Cherni</h1>
           <div className="trans">
-          <p className="home__subtitle">Network Engineering student <a href="https://fr.wikipedia.org/wiki/Institut_national_des_sciences_appliqu%C3%A9es_et_de_technologie" target="_blank" rel="noreferrer"> @INSAT</a></p>
-          <p className="home__subtitle">Cybersecurity & Cloud enthusiast </p>
-          <p className="home__subtitle">Web developer,  Linux administrator</p>
+          <p className="home__subtitle">AppSec consultant<a href="https://www.mazars.com/" target="_blank" rel="noreferrer"> @Mazars</a></p>
+          <p className="home__subtitle">Technical lead <a href="https://securinets.tn/" target="_blank" rel="noreferrer"> @securinets</a></p>
+          <p className="home__subtitle">Network Engineering student  <a href="https://fr.wikipedia.org/wiki/Institut_national_des_sciences_appliqu%C3%A9es_et_de_technologie" target="_blank" rel="noreferrer"> @INSAT</a></p>
+          {/* <p className="home__subtitle">Cybersecurity & Cloud enthusiast </p> */}
+          
           <div className="fadein">
           <br/>
           <p className="home__description">
-            Based in Tunisia, CTF player with
-            <a href="https://ctftime.org/team/194091" target="_blank" rel="noreferrer"> SOter14 <br/>team</a>, focused on Wep app penetration <br/>testing. I enjoy auditing source codes <br/>and scripting my exploits 🤖 <br/> Graduate in 2025. </p>
+            CTF player with
+            <a href="https://ctftime.org/team/194091" target="_blank" rel="noreferrer"> SOter14 <br/>team</a> and <a href="https://ctftime.org/team/58979"  target="_blank" rel="noreferrer"> r3kapig team</a>, focused on Wep app penetration <br/>testing. I enjoy auditing source codes <br/>and scripting my exploits 🤖 <br/> Graduate in 2025. </p>
           <a href="https://www.linkedin.com/in/anascherni/" className="button button--flex" target="_blank">
               Ping me!
               <svg

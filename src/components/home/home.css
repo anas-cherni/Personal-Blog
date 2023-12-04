@@ -40,6 +40,7 @@
 
 .home__img{
     background: url(../../assets/profile.jpg);
+    filter: grayscale(90%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

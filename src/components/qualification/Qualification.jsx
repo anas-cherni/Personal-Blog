@@ -71,14 +71,34 @@ const Qualification = () => {
                     
                     <div className={ToggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"}>
 
+
+                    <div className="qualification__data">
+                        <div></div>
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            
+                            <h3 className="qualification__title">Mazars [Company]</h3>
+                            <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i>2023-Present
+                            </div>
+                            <span className="qualification__subtitle"> Application security consultant, Conducting Web and Mobile Pentesting / source code review for international clients.</span>
+                            
+                            
+                        </div>
+                    </div>
+
                     <div className="qualification__data">
                         <div>
                             
-                            <h3 className="qualification__title-right">Securinets</h3>
+                            <h3 className="qualification__title-right">Securinets [Organization] </h3>
                             <div className="qualification__calendar-r">
                                 <i className="uil uil-calendar-alt"></i>2022-2023
                             </div>
-                            <h4 className="qualification__subtitle-right">Technical Director, charged with delivering cybersecurity content through CTFs and workshops</h4>
+                            <h4 className="qualification__subtitle-right">Technical Director, charged with delivering cybersecurity content through CTFs and workshops and manage a talented team</h4>
                             
                             
                         </div>
@@ -98,24 +118,29 @@ const Qualification = () => {
 
                         <div>
                             
-                            <h3 className="qualification__title">Association for Computing Machinery</h3>
+                            <h3 className="qualification__title">Intellisec Solutions [Company] </h3>
                             <div className="qualification__calendar">
+                                <i className="uil uil-calendar-alt"></i> 09/2022-12/2022
+                            </div>
+                            <span className="qualification__subtitle"> Offensive Security Intern <br/>
+* Delivered a configuration review on SSO solution<br/>
+* Got exposed to different types of offensive engagements (external and internal pentesting).</span>
+                            
+                            
+                        </div>
+                    </div>
+                    
+
+
+
+                    <div className="qualification__data">
+                        <div>
+                            
+                            <h3 className="qualification__title-right">Association for Computing Machinery [Organization]</h3>
+                            <div className="qualification__calendar-r">
                                 <i className="uil uil-calendar-alt"></i>April - 2022
                             </div>
-                            <span className="qualification__subtitle">Network System Administration, contributed in creation of local network infrastructure for Competitive Programming contest </span>
-                            
-                            
-                        </div>
-                    </div>
-
-                    <div className="qualification__data">
-                        <div>
-                            
-                            <h3 className="qualification__title-right">Junior Entreprise INSAT</h3>
-                            <div className="qualification__calendar-r">
-                                <i className="uil uil-calendar-alt"></i>2021-2022
-                            </div>
-                            <h4 className="qualification__subtitle-right">Head of Marketing Department</h4>
+                            <h4 className="qualification__subtitle-right">Network System Administration, contributed in creation of local network infrastructure for Competitive Programming contest </h4>
                             
                             
                         </div>
@@ -125,6 +150,9 @@ const Qualification = () => {
                             <span className="qualification__line"></span>
                         </div>
                     </div>
+
+
+
 
                     <div className="qualification__data">
                         <div></div>
@@ -135,15 +163,39 @@ const Qualification = () => {
 
                         <div>
                             
-                            <h3 className="qualification__title">Bulldozer </h3>
+                            <h3 className="qualification__title">Junior Entreprise INSAT [Organization] </h3>
                             <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i>August - 2021
+                                <i className="uil uil-calendar-alt"></i>2021-2022
                             </div>
-                            <span className="qualification__subtitle">Front end web development intern, ReactJs Storybook  </span>
+                            <span className="qualification__subtitle">Head of Marketing Department </span>
                             
                             
                         </div>
                     </div>
+
+
+
+
+                    
+                    <div className="qualification__data">
+                        <div>
+                            
+                            <h3 className="qualification__title-right">Bulldozer [Company]</h3>
+                            <div className="qualification__calendar-r">
+                                <i className="uil uil-calendar-alt"></i>August - 2021
+                            </div>
+                            <h4 className="qualification__subtitle-right">Front end web development intern, ReactJs Storybook </h4>
+                            
+                            
+                        </div>
+
+                        <div>
+                            <span className="qualification__rounder"></span>
+                            <span className="qualification__line"></span>
+                        </div>
+                    </div>
+
+
                 
                 
 

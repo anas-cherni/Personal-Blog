@@ -35,18 +35,18 @@ const GoodAt = () => {
 
 
                     <div className="skills__data">
-                    <i class="uil uil-search-alt"></i>
+                    <i class="uil uil-tablet"></i>
 
                     <div>
-                        <h3 className="skills__name">Memory forensics</h3>
+                        <h3 className="skills__name">Mobile application penetration testing</h3>
                         <i class="uil uil-angle-right-b"></i>
-                        <span className="skills__level">Windows memory dump</span><br/>
+                        <span className="skills__level">Android</span><br/>
                         <i class="uil uil-angle-right-b"></i>
-                        <span className="skills__level">Linux memory dump</span><br/>
+                        <span className="skills__level">iOS</span><br/>
                     </div>
                 </div>
 
-                 <div className="skills__data">
+                 {/* <div className="skills__data">
                     <i class="uil uil-server-network"></i>
 
                     <div>
@@ -56,7 +56,7 @@ const GoodAt = () => {
                         <i class="uil uil-angle-right-b"></i>
                         <span className="skills__level">Log analysis</span><br/>
                     </div>
-                </div>
+                </div> */}
 
 
             </div>
